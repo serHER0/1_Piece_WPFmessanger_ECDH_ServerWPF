@@ -1,0 +1,13 @@
+﻿<Window x:Class="ServerWPF.listFriendWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServerWPF"
+        mc:Ignorable="d"
+        Title="listFriendWindow" Height="309" Width="229" Loaded="list_load">
+    <Grid Margin="0,0,0,7">
+        <ListBox x:Name="listUsersBox" d:ItemsSource="{d:SampleData ItemCount=5}" FontSize="16"/>
+
+    </Grid>
+</Window>

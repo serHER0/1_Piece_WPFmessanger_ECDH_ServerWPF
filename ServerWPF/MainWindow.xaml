@@ -1,0 +1,17 @@
+﻿<Window x:Class="ServerWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServerWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="375" Width="420">
+    <Grid HorizontalAlignment="Left" Width="423" Margin="0,0,0,-37">
+        <TextBox x:Name="IpBox" HorizontalAlignment="Left" Margin="61,10,0,0" TextWrapping="Wrap" Text="26.87.241.72:900" FontSize="20" VerticalAlignment="Top" Width="320" Height="35"/>
+        <Label x:Name="ipLabel" Content="IP" FontSize="20" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.243,0.015" Height="35" Width="30"/>
+        <ListBox x:Name="infoListbox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="45,64,0,205" FontSize="20" HorizontalAlignment="Left" Width="336"/>
+        <Button x:Name="StartButt" Content="Start" FontSize="20" HorizontalAlignment="Center" Margin="0,224,0,0" VerticalAlignment="Top" Height="45" Width="115" Click="StartButt_Click"/>
+        <Button x:Name="viewListUsersButt" Content="View Users" HorizontalAlignment="Left" Margin="156,289,0,0" VerticalAlignment="Top" Height="38" Width="114" Click="viewListUsersButt_Click"/>
+
+    </Grid>
+</Window>
